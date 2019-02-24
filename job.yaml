@@ -5,7 +5,7 @@
     description: 'Automatically builds the docker image'
     scm:
       - git:
-          url: https://github.com/some/repo
+          url: https://github.com/FutureItVision/DemoProject.git
           branches:
             - master
           basedir: {projectdir}
