@@ -27,6 +27,7 @@ libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificat
 COPY ./DemoProject /usr/src/DemoProject
 WORKDIR /usr/src/DemoProject
 
+
 EXPOSE 4444
 
 VOLUME /root/.m2
