@@ -24,7 +24,7 @@ libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo
 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils
 
 
-COPY /usr/src/DemoProject
+COPY /usr/src/DemoProject  /usr/src/DemoProject
 WORKDIR /usr/src/DemoProject
 
 
