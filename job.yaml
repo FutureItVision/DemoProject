@@ -1,20 +1,17 @@
 - job:
-    projectdir: '~/DemoProject/' 
-    image: selenium-maven:1.0
     name: selenium-maven-docker-test
-    description: 'Automatically builds the docker image'
-    scm:
-      - git:
-          url: https://github.com/FutureItVision/DemoProject.git
-          branches:
-            - master
-          basedir: {projectdir}
-    triggers:
-      - pollscm:
-          cron: "* * * * *"
-    builders:
-      - shell: |
-          cd {projectdir}
-          g pull 
-          docker build --network host -t {image} .
-    
+      description: 'Automatically builds the docker image'
+      scm:
+        - git:
+            url: https://github.com/FutureItVision/DemoProject.git
+            branches:
+              - master
+            basedir: ~/DemoProject/
+      triggers:
+        - pollscm:
+            cron: "* * * * *"
+      builders:
+        - shell: |
+            cd ~/DemoProject/
+            g pull
+            docker build --network host -t selenium-maven:1.0 .
