@@ -10,7 +10,7 @@ RUN cd /tmp && wget https://www-us.apache.org/dist/maven/maven-3/3.6.0/binaries/
 RUN cd /opt \
 	&& sudo tar -xvzf /tmp/apache-maven-3.6.0-bin.tar.gz
 
-ENV PATH "$PATH:/opt/apache-maven-3.6.0/bin"
+ENV PATH "$PATH:/opt/apache-maven-3.6.0/bin" 
 ENV M2_HOME "/opt/apache-maven-3.6.0"
 
 RUN sudo update-alternatives --install "/usr/bin/mvn" "mvn" "/opt/apache-maven-3.6.0/bin/mvn" 0 \
