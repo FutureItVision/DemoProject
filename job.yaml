@@ -15,4 +15,4 @@
           cd /Users/nadiruzzamanmuhammad/DemoProject/
           pwd
           docker build --network host -t selenium-maven:1.0 .
-         sudo docker run selenium-maven:1.0 cd /usr/src/DemoProject & sudo mvn clean install -X
+          docker run selenium-maven:1.0 cd /usr/src/DemoProject & sudo mvn clean install -X
