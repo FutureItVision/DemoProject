@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class TestOne {
 
-   // public RemoteWebDriver driver;
+   public RemoteWebDriver driver;
 	@Test
 	public void firstTest(){
 
