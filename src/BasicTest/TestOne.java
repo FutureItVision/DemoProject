@@ -20,6 +20,7 @@ public class TestOne {
     ChromeDriver driver = new ChromeDriver(options);
     driver.get("http://automationpractice.com/index.php");
     driver.findElementByXPath(".//*[@id='header_logo']/a/img").isDisplayed();
+    System.out.println("TestUP");
 //        driver = new RemoteWebDriver(new URL("http://172.217.11.46:8000/wd/hub"), chromeCapabilities);
 //        driver.get("http://automationpractice.com/index.php");
 //        driver.findElementByXPath(".//*[@id='header_logo']/a/img").isDisplayed();
